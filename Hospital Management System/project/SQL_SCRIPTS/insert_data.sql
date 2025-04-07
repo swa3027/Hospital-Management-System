@@ -1,0 +1,48 @@
+INSERT INTO Patients (PatientID, Name, Age, Contact, Disease) VALUES
+(1, 'Alice Roy', 30, '9876543210', 'Flu'),
+(2, 'Bob Smith', 45, '8765432109', 'Diabetes'),
+(3, 'Clara Thomas', 29, '7654321098', 'Migraine'),
+(4, 'David Miller', 60, '6543210987', 'Arthritis'),
+(5, 'Eva Green', 38, '5432109876', 'Asthma'),
+(6, 'Frank Lewis', 52, '9321478065', 'Hypertension'),
+(7, 'Grace Hall', 27, '9214578032', 'Allergy'),
+(8, 'Henry Ford', 33, '9891234567', 'Fever'),
+(9, 'Irene Adler', 41, '9890011223', 'Thyroid'),
+(10, 'Jack Reacher', 36, '9765432101', 'Back Pain'),
+(11, 'Kate Winslet', 49, '9123456789', 'Sinusitis'),
+(12, 'Liam Neeson', 67, '9012345678', 'Blood Pressure'),
+(13, 'Maria Hill', 25, '9988776655', 'Flu'),
+(14, 'Noah Beck', 22, '9876501234', 'Cold'),
+(15, 'Olivia Wilde', 40, '9345612789', 'Cholesterol');
+
+INSERT INTO Doctors (DoctorID, Name, Specialization, Contact) VALUES
+(101, 'Dr. Sharma', 'General Physician', '9998877665'),
+(102, 'Dr. Verma', 'Cardiologist', '8887766554'),
+(103, 'Dr. Rao', 'Neurologist', '7776655443'),
+(104, 'Dr. Kapoor', 'Orthopedic', '6665544332'),
+(105, 'Dr. Iyer', 'Pulmonologist', '9556677889'),
+(106, 'Dr. Sen', 'Dermatologist', '9445566778'),
+(107, 'Dr. Gupta', 'ENT Specialist', '9334455667'),
+(108, 'Dr. Mehta', 'Gastroenterologist', '9223344556'),
+(109, 'Dr. Das', 'Endocrinologist', '9112233445'),
+(110, 'Dr. Abraham', 'Oncologist', '9001122334');
+
+INSERT INTO Appointments (AppointmentID, PatientID, DoctorID, AppointmentDate, Status) VALUES
+(1001, 1, 101, '2025-04-05', 'Completed'),
+(1002, 2, 102, '2025-11-06', 'Scheduled'),
+(1003, 3, 103, '2025-10-06', 'Cancelled'),
+(1004, 4, 104, '2025-03-07', 'Scheduled'),
+(1005, 5, 105, '2025-04-08', 'Critical'),
+(1006, 6, 102, '2025-06-09', 'Scheduled'),
+(1007, 7, 101, '2025-04-10', 'Emergency'),
+(1008, 8, 105, '2025-10-11', 'Scheduled'),
+(1009, 9, 106, '2025-11-12', 'Completed'),
+(1010, 10, 107, '2025-10-12', 'Cancelled'),
+(1011, 11, 108, '2025-04-13', 'Scheduled'),
+(1012, 12, 109, '2025-11-14', 'Emergency'),
+(1013, 13, 110, '2025-01-15', 'Scheduled'),
+(1014, 14, 106, '2025-03-15', 'Critical'),
+(1015, 15, 104, '2025-03-16', 'Completed'),
+(1016, 3, 101, '2025-04-17', 'Scheduled'),
+(1017, 5, 102, '2025-01-17', 'Critical'),
+(1018, 7, 103, '2025-07-18', 'Emergency');
